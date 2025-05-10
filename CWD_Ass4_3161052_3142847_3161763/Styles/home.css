@@ -1,0 +1,55 @@
+/* 
+Variables
+*/
+:root {
+    --main: #ff9191;
+    --accent: #c391ff;
+    --background: #e8e8e8;
+    --background-header: #4af861;
+    
+    --text: #fff;
+    --subtext: ;
+    --text-underline: #00ad3a;
+}
+
+/* */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: var(--background-header);
+
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    justify-self: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    color: var(--text);
+    font-size: 1.15rem;
+
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    background-color: var(--background);
+}
+
+/* Footer */
