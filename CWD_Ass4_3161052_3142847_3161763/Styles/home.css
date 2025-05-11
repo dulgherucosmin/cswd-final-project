@@ -84,6 +84,7 @@ header nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -100,7 +101,8 @@ header nav ul {
 /* Main */
 
 main section {
-    height: 70vh;
+    width: 100%;
+    height: 95vh;
 }
 
 main .mission {
@@ -109,37 +111,50 @@ main .mission {
     display: flex;
     flex-direction: row;
 
-    justify-items: center;
+    position: relative;
+
+    justify-content: flex-end;
     align-items: center;
 
-    background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/bg-image-2.jpg");
+    background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/hero-image-resize.jpg");
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position: center;
     background-size: cover;
+
+    
 }
 
 main .mission #mission-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: 0;
+    width: 40%;
+    padding: 0 4rem;
 }
 
 main .mission #mission-heading {
     color: var(--sitewhite);
-    width: 50%;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 1.5rem;
+
+    text-transform: uppercase;
 }
 
 main .mission #mission-text {
+    font-family:"Lato italic";
     color: var(--sitewhite);
-    width: 50%;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 main .mission #adopt-btn {
+    padding: 1rem 2.5rem;
     text-transform: uppercase;
     color: var(--sitewhite);
 
     border: 2px solid var(--sitewhite);
     border-radius: 32px;
+
+    align-self: center;
 }
 
 
