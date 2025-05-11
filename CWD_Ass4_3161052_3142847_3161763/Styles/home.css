@@ -102,7 +102,7 @@ header nav ul {
 
 main section {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 }
 
 main .mission {
@@ -157,6 +157,94 @@ main .mission #adopt-btn {
     align-self: center;
 }
 
+main .adopt {
+    display: flex;
+    flex-direction: column;
+}
+
+main .adopt #adopt-container {
+    margin: 2rem 0;
+    padding: 0 4rem;
+
+    justify-items: center;
+}
+
+main .adopt #adopt-heading {
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+}
+
+main .adopt #adopt-text {
+    font-family: 'Lato';
+    margin: 0 0 2rem 0;
+
+    width: 40%;
+    text-align: center;
+
+    line-height: 1.4;
+}
+
+main .adopt #view-btn {
+    font-family: 'Lato Bold';
+    font-size: .75rem;
+
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    color: var(--sitewhite);
+
+    background-color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 32px;
+
+    align-self: center;
+}
+
+main #adopt-pets {
+    margin: 2rem 0;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+main .pet {
+    display: flex;
+    flex-direction: column;
+}
+
+main #adopt-pets #lower {
+    margin-top: 4rem;
+}
+
+main .pet img {
+    width: 192px;
+    height: 192px;
+
+    border: 6px solid var(--main);
+    border-radius: 50%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+main .pet button {
+    font-family: 'Lato Bold';
+    font-size: .70rem;
+
+    width: 128px;
+
+    margin: 1rem 2rem;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+    color: var(--siteblack);
+    background-color: var(--sitewhite);
+
+    border: 2px solid var(--siteblack);
+    border-radius: 32px;
+}
 
 main .mission, main .help {
     background-color: gray;
