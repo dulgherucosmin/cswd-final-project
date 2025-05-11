@@ -84,6 +84,7 @@ header nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
     justify-content: center;
 }
 
