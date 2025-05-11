@@ -2,10 +2,10 @@
 Variables
 */
 :root {
-    --main: #ff9191;
-    --accent: #c391ff;
-    --background: #e8e8e8;
-    --background-header: #4af861;
+    --main: #71993B;
+    --accent: #F58232;
+    --sitewhite: #FFF;
+    --siteblack: #000;
     
     --text: #fff;
     --subtext: ;
@@ -19,7 +19,7 @@ Variables
     margin: 0;
 }
 
-/* Header */
+/* Header: Top Part */
 
 header {
     background-color: var(--background-header);
@@ -28,22 +28,50 @@ header {
     flex-direction: column;
 }
 
+header .header-top {
+    margin: 2rem 4rem;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+header .header-top #donate-btn {
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    color: var(--main);
+
+    border: 2px solid var(--main);
+    border-radius: 32px;
+
+    
+    align-self: center;
+
+}
+
+/* Header: Navigation */
+
 header nav {
-    justify-self: flex-end;
+    background-color: var(--main);
+
+    padding: 1.25rem 0;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .nav-link {
     color: var(--text);
-    font-size: 1.15rem;
+    font-size: 1rem;
 
-    margin-left: 1rem;
+    text-transform: uppercase;
     text-decoration: none;
+    margin: 0 1rem;
 }
 
 /* Main */
