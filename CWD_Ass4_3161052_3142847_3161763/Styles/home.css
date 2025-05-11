@@ -105,6 +105,8 @@ main section {
     height: 100vh;
 }
 
+/* Home Page: Mission */
+
 main .mission {
     font-family: 'Lato Bold';
 
@@ -156,6 +158,8 @@ main .mission #adopt-btn {
 
     align-self: center;
 }
+
+/* Home Page: Adopt */
 
 main .adopt {
     display: flex;
@@ -253,5 +257,7 @@ main .mission, main .help {
 main .adopt, main.thisyear {
     background-color: var(--sitewhite);
 }
+
+/* Home Page: Help */
 
 /* Footer */
