@@ -42,6 +42,8 @@
 /* Header: Top Part */
 
 header {
+    font-family: 'Lato Bold';
+
     background-color: var(--background-header);
 
     display: flex;
