@@ -25,6 +25,7 @@
     --main: #71993B;
     --accent: #F58232;
     --sitewhite: #FFF;
+    --secondarywhite: #CDCDCD;
     --siteblack: #000;
     
     --text: #fff;
@@ -205,7 +206,7 @@ main .adopt #view-btn {
 }
 
 main #adopt-pets {
-    margin: 2rem 0;
+    margin: 2rem 0 8rem 0;
 
     display: flex;
     flex-direction: row;
@@ -217,10 +218,6 @@ main #adopt-pets {
 main .pet {
     display: flex;
     flex-direction: column;
-}
-
-main #adopt-pets #lower {
-    margin-top: 4rem;
 }
 
 main .pet img {
@@ -251,7 +248,7 @@ main .pet button {
 }
 
 main .mission, main .help {
-    background-color: gray;
+    background-color: var(--secondarywhite);
 }
 
 main .adopt, main.thisyear {
@@ -259,5 +256,30 @@ main .adopt, main.thisyear {
 }
 
 /* Home Page: Help */
+
+main .help {
+    align-items: center;
+}
+
+main .help #help-heading {
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    color: var(--siteblack);
+
+    margin: 0 0 1.5rem 0;
+}
+
+main .help #help-text {
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--siteblack);
+
+    margin: 0 0 2rem 0;
+
+    width: 40%;
+    text-align: center;
+
+    line-height: 1.4;
+}
 
 /* Footer */
