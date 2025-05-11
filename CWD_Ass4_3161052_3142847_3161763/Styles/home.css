@@ -1,6 +1,26 @@
-/* 
-Variables
-*/
+/* Fonts */
+@font-face {
+    font-family: 'Lato';
+    src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lato Italic';
+    src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Lato-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Lato BoldItalic';
+    src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Lato-BoldItalic.ttf");
+}
+
+
+/* Variables */
 :root {
     --main: #71993B;
     --accent: #F58232;
@@ -76,8 +96,12 @@ header nav ul {
 
 /* Main */
 
-main {
-    background-color: var(--background);
+main .mission, main .help {
+    background-color: gray;
+}
+
+main .adopt, main.thisyear {
+    background-color: var(--sitewhite);
 }
 
 /* Footer */
