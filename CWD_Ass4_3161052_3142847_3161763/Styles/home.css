@@ -102,12 +102,18 @@ header nav ul {
 
 .nav-link {
     font-family: 'Lato Bold';
-    color: var(--text);
+    color: var(--sitewhite);
     font-size: 1rem;
 
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 1rem;
+}
+
+.nav-link:hover {
+    color: var(--secondarywhite);
+
+    transition: all 0.3s;
 }
 
 /* Main */
