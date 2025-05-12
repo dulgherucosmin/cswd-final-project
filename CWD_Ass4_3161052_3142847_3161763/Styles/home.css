@@ -70,7 +70,12 @@ header .header-top #donate-btn {
 
 
     align-self: center;
+}
 
+header .header-top #donate-btn:hover {
+    background-color: var(--main);
+    color: var(--sitewhite);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Header: Navigation */
@@ -160,11 +165,18 @@ main .mission #adopt-btn {
     align-self: center;
 }
 
+main .mission #adopt-btn:hover {
+    background-color: var(--sitewhite);
+    color: var(--main);
+    transition: all 0.3s ease-in-out;
+}
+
 /* Home Page: Adopt */
 
 main .adopt {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 
 main .adopt #adopt-container {
@@ -176,7 +188,7 @@ main .adopt #adopt-container {
 
 main .adopt #adopt-heading {
     font-family: 'Lato Bold';
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0 0 1.5rem 0;
 }
 
@@ -203,6 +215,12 @@ main .adopt #view-btn {
     border-radius: 32px;
 
     align-self: center;
+}
+
+main .adopt #view-btn:hover {
+    background-color: var(--siteblack);
+    color: var(--main);
+    transition: all 0.3s ease-in-out;
 }
 
 main #adopt-pets {
