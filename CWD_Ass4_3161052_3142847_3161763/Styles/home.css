@@ -114,7 +114,7 @@ header nav ul {
 
 main section:first-child {
     width: 100%;
-    
+    height:100vh;
 }
 
 
