@@ -51,6 +51,10 @@ header {
     flex-direction: column;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header .header-top {
     margin: 2rem 4rem;
 
