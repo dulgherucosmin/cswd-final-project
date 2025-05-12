@@ -323,6 +323,25 @@ main .help #help-text {
     line-height: 1.4;
 }
 
+/* About us page */
+main .about #about-heading {
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    color: var(--siteblack);
+    margin: 0 0 1.5rem 0;
+}
+main .about #about-text {
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--siteblack);
+    
+    margin: 0 0 2rem 0;
+    width: 40%;
+    text-align: center;
+
+    line-height: 1.4;
+}
+
 /* Footer */
 
 .footer {
