@@ -45,8 +45,8 @@
 header {
     font-family: 'Lato Bold';
 
-    background-color: var(--background-header);
-    color:#71993B;
+    background-color: var(--main);
+    color: var(--sitewhite);
     display: flex;
     flex-direction: column;
 }
@@ -70,10 +70,10 @@ header .header-top #donate-btn {
 
     padding: .85rem 2.5rem;
     text-transform: uppercase;
-    color: var(--main);
+    color: var(--sitewhite);
 
-    border: 2px solid var(--main);
-    background-color: var(--sitewhite);
+    border: 2px solid var(--sitewhite);
+    background-color: transparent;
     border-radius: 32px;
 
     align-self: center;
@@ -82,8 +82,8 @@ header .header-top #donate-btn {
 }
 
 header .header-top #donate-btn:hover {
-    background-color: var(--main);
-    color: var(--sitewhite);
+    background-color: var(--sitewhite);
+    color: var(--main);
 
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ header .header-top #donate-btn:hover {
 /* Header: Navigation */
 
 header nav {
-    background-color: var(--main);
+    background-color: var(--sitewhite);
 
     padding: 1.25rem 0;
 }
@@ -106,7 +106,7 @@ header nav ul {
 
 .nav-link {
     font-family: 'Lato Bold';
-    color: var(--sitewhite);
+    color: var(--main);
     font-size: 1rem;
 
     text-transform: uppercase;
