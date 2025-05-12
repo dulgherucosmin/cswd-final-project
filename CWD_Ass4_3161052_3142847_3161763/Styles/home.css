@@ -324,11 +324,25 @@ main .help #help-text {
 }
 
 /* About us page */
+main .about{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+
+    justify-content: flex-end;
+    align-items:center;
+   
+}
+main .about #about-container{
+     width: 40%;
+    padding: 0 4rem;
+}
 main .about #about-heading {
     font-family: 'Lato Bold';
     font-size: 2rem;
     color: var(--siteblack);
     margin: 0 0 1.5rem 0;
+    text-align: left;
 }
 main .about #about-text {
     font-family: 'Lato';
@@ -337,6 +351,67 @@ main .about #about-text {
     
     margin: 0 0 2rem 0;
     width: 40%;
+    text-align:left;
+    line-height: 1.4;
+}
+main .vision{
+    align-items: center;
+}
+main .vision #vision-heading{
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    color: var(--siteblack);
+
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+}
+main .vision #vision-text{
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--siteblack);
+
+    margin: 0 0 2rem 0;
+
+    
+    text-align: center;
+
+    line-height: 1.4;
+}
+
+main .value{
+    
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+main .value #value-heading{
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    color: var(--siteblack);
+
+    margin: 0 0 1.5rem 0;
+    text-align:center;
+}
+main .value #value-text{
+      font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--siteblack);
+    
+    margin: 0 0 2rem 0;
+
+    
+    line-height: 1.4;
+    
+    text-align: center;
+}
+main .value ol li{
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--siteblack);
+
+    margin: 0 0 2rem 0;
+
+    
     text-align: center;
 
     line-height: 1.4;
