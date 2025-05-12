@@ -75,7 +75,6 @@ header .header-top #donate-btn {
 header .header-top #donate-btn:hover {
     background-color: var(--main);
     color: var(--sitewhite);
-    transition: all 0.3s ease-in-out;
 }
 
 /* Header: Navigation */
@@ -106,10 +105,11 @@ header nav ul {
 
 /* Main */
 
-main section {
+main section:first-child {
     width: 100%;
     height: 100vh;
 }
+
 
 /* Home Page: Mission */
 
@@ -168,7 +168,6 @@ main .mission #adopt-btn {
 main .mission #adopt-btn:hover {
     background-color: var(--sitewhite);
     color: var(--main);
-    transition: all 0.3s ease-in-out;
 }
 
 /* Home Page: Adopt */
@@ -220,7 +219,6 @@ main .adopt #view-btn {
 main .adopt #view-btn:hover {
     background-color: var(--siteblack);
     color: var(--main);
-    transition: all 0.3s ease-in-out;
 }
 
 main #adopt-pets {
@@ -309,7 +307,7 @@ main .help #help-text {
     padding: 4rem 4rem;
 }
 
-.footer-container {
+#footer-container {
     font-family: "Lato";
 
     display: flex;
@@ -318,12 +316,12 @@ main .help #help-text {
     gap: 2rem;
 }
 
-.footer-column p {
+#footer-container .footer-column p {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
 
-.footer-column h4 {
+#footer-container .footer-column h4 {
     font-family: "lato bold";
     font-size: 1.25rem;
     
@@ -331,11 +329,11 @@ main .help #help-text {
     margin-bottom: 2rem;
 }
 
-.footer-column h4:not(:first-child) {
+#footer-container .footer-column h4:not(:first-child) {
     margin-top: 2rem;
 }
 
-.footer-column ul {
+#footer-container .footer-column ul {
     list-style: none;
     
     display: flex;
@@ -344,11 +342,24 @@ main .help #help-text {
     gap: 0.75rem;
 }
 
-.footer-column ul li a {
+#footer-container .footer-column ul li a {
     text-decoration: none;
     color: var(--sitewhite);
 }
 
-.footer-column ul li a:hover {
+#footer-container .footer-column ul li a:hover {
     color: var(--main);
 }
+
+#footer-container .footer-column .social-icons {
+    display:flex;
+    
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#footer-container .footer-column .social-icons a img {
+    width: 20px;
+    height: auto;
+}
+
