@@ -177,6 +177,7 @@ main .adopt {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 main .adopt #adopt-container {
