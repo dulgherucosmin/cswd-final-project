@@ -358,10 +358,12 @@ main .about{
     align-items:center;
    
 }
+
 main .about #about-container{
      width: 40%;
     padding: 0 4rem;
 }
+
 main .about #about-heading {
     font-family: 'Lato Bold';
     font-size: 2rem;
@@ -440,6 +442,69 @@ main .value ol li{
     text-align: center;
 
     line-height: 1.4;
+}
+
+/* Gallery */
+
+main .gallery {
+    font-family: 'Lato Bold';
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 50vh;
+
+    background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/pexels-photo-1108099.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .available-pets {
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main #available-heading {
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--main);
+
+    margin: 4rem 0;
+    padding-bottom: 1rem;
+
+    border-bottom: 4px solid var(--accent);
+}
+
+main .gallery-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+main #gallery-btn {
+    font-family: 'Lato Bold';
+    font-size: .75rem;
+
+    margin: 0 1rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    color: var(--sitewhite);
+
+    background-color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 32px;
+
+    align-self: center;
 }
 
 /* Footer */
