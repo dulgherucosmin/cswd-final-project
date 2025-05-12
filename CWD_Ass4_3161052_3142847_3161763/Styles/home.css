@@ -68,8 +68,9 @@ header .header-top #donate-btn {
     border: 2px solid var(--main);
     border-radius: 32px;
 
-
     align-self: center;
+
+    transition: all 0.3s ease-in-out;
 }
 
 header .header-top #donate-btn:hover {
@@ -128,8 +129,6 @@ main .mission {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    
 }
 
 main .mission #mission-container {
@@ -163,6 +162,8 @@ main .mission #adopt-btn {
     border-radius: 32px;
 
     align-self: center;
+
+    transition: all 0.3s ease-in-out;
 }
 
 main .mission #adopt-btn:hover {
@@ -214,6 +215,8 @@ main .adopt #view-btn {
     border-radius: 32px;
 
     align-self: center;
+
+    transition: all 0.3s ease-in-out;
 }
 
 main .adopt #view-btn:hover {
@@ -254,13 +257,22 @@ main .pet button {
     width: 128px;
 
     margin: 1rem 2rem;
-    padding: .5rem 1.5rem;
+    padding: .75rem 1.5rem;
     text-transform: uppercase;
     color: var(--siteblack);
     background-color: var(--sitewhite);
 
     border: 2px solid var(--siteblack);
     border-radius: 32px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main .pet button:hover {
+    background-color: var(--main);
+    color: var(--sitewhite);
+
+    border: 2px solid var(--main);
 }
 
 main .mission, main .help {
