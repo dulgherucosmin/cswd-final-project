@@ -65,11 +65,15 @@ header .header-top {
 }
 
 header .header-top #donate-btn {
-    padding: 1rem 2.5rem;
+    font-family: 'Lato Bold';
+    font-size: 1.1rem;
+
+    padding: .85rem 2.5rem;
     text-transform: uppercase;
     color: var(--main);
 
     border: 2px solid var(--main);
+    background-color: var(--sitewhite);
     border-radius: 32px;
 
     align-self: center;
@@ -153,24 +157,27 @@ main .mission #mission-heading {
 
     font-size: 2.5rem;
 
-    margin-bottom: 1.5rem;
-
     text-transform: uppercase;
 }
 
 main .mission #mission-text {
     font-family:"Lato italic";
     color: var(--sitewhite);
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     line-height: 1.6;
 }
 
 main .mission #adopt-btn {
-    padding: 1rem 2.5rem;
+    font-family: 'Lato Bold';
+    font-size: .95rem;
+
+    margin: .5rem 0;
+    padding: .85rem 2rem;
     text-transform: uppercase;
     color: var(--sitewhite);
 
     border: 2px solid var(--sitewhite);
+    background-color: transparent;
     border-radius: 32px;
 
     align-self: center;
