@@ -112,12 +112,24 @@ header nav ul {
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 1rem;
+    position: relative;
 }
 
-.nav-link:hover {
-    color: var(--secondarywhite);
+.nav-link::after {
+    content: '';
+    height: 2.5px;
+    width: 100%;
+    background-color: var(--accent);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+}
 
-    transition: all 0.3s;
+.nav-link:hover::after {
+    opacity: 1;
+    transition: all 0.4s;
+    pointer-events: none;
 }
 
 /* Main */
