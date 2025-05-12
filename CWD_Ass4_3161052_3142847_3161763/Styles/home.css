@@ -337,18 +337,16 @@ main .help #help-text {
 
     display: flex;
     justify-content: space-between;
-
-    gap: 2rem;
 }
 
 #footer-container .footer-column p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     line-height: 1.6;
 }
 
 #footer-container .footer-column h4 {
     font-family: "lato bold";
-    font-size: 1.25rem;
+    font-size: 1rem;
     
     color: var(--main);
     margin-bottom: 2rem;
