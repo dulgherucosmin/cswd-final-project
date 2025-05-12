@@ -301,3 +301,54 @@ main .help #help-text {
 }
 
 /* Footer */
+
+.footer {
+    background-color: var(--siteblack);
+    color: var(--sitewhite);
+
+    padding: 4rem 4rem;
+}
+
+.footer-container {
+    font-family: "Lato";
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 2rem;
+}
+
+.footer-column p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.footer-column h4 {
+    font-family: "lato bold";
+    font-size: 1.25rem;
+    
+    color: var(--main);
+    margin-bottom: 2rem;
+}
+
+.footer-column h4:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.75rem;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--sitewhite);
+}
+
+.footer-column ul li a:hover {
+    color: var(--main);
+}
