@@ -46,7 +46,7 @@ header {
     font-family: 'Lato Bold';
 
     background-color: var(--background-header);
-
+    color:#71993B;
     display: flex;
     flex-direction: column;
 }
