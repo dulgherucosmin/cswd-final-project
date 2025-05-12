@@ -76,6 +76,8 @@ header .header-top #donate-btn {
 header .header-top #donate-btn:hover {
     background-color: var(--main);
     color: var(--sitewhite);
+
+    cursor: pointer;
 }
 
 /* Header: Navigation */
@@ -169,6 +171,8 @@ main .mission #adopt-btn {
 main .mission #adopt-btn:hover {
     background-color: var(--sitewhite);
     color: var(--main);
+
+    cursor:pointer;
 }
 
 /* Home Page: Adopt */
@@ -223,6 +227,8 @@ main .adopt #view-btn {
 main .adopt #view-btn:hover {
     background-color: var(--siteblack);
     color: var(--main);
+
+    cursor: pointer
 }
 
 main #adopt-pets {
@@ -274,6 +280,8 @@ main .pet button:hover {
     color: var(--sitewhite);
 
     border: 2px solid var(--main);
+
+    cursor: pointer
 }
 
 main .mission, main .help {
