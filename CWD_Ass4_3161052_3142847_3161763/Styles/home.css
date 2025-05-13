@@ -507,6 +507,72 @@ main #gallery-btn {
     align-self: center;
 }
 
+/* Contact Page */
+
+main .contact {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+main .contact div {
+    margin: 0 8rem;
+}
+
+main #contact-heading {
+    font-family: 'Lato Bold';
+    margin: 2rem 0;
+}
+
+main .contact p {
+    font-family: 'Lato';
+}
+
+main .contact #contact-email {
+    margin: 1rem 0;
+}
+
+main .contact #contact-phone {
+    margin: 1rem 0;
+}
+
+main #comment-heading {
+    font-family: 'Lato Bold';
+    margin: 2rem 0;
+}
+
+main .comments {
+    display: flex;
+    flex-direction: column;
+
+    justify-items: center;
+    align-items: center;
+
+    background-color: var(--secondarywhite);
+    height: 50vh;
+}
+
+main .comment-form {
+    display: flex;
+    flex-direction: column;
+
+    justify-items: center;
+    align-items: center;
+}
+
+main .comment-form input {
+    margin: .25rem 0;
+
+    border: 2px solid var(--main);
+    border-radius: 32px;
+    background-color: var(--secondarywhite);
+}
+
+main .comment-form input:focus {
+    border: 2px solid var(--accent);
+}
+
 /* Footer */
 
 .footer {
