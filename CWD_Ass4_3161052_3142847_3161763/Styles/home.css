@@ -562,7 +562,11 @@ main .comment-form {
 }
 
 main .comment-form input {
+    font-family: 'Lato';
+    font-size: 0.75rem;
+    
     margin: .25rem 0;
+    padding: .25rem .25rem;
 
     border: 2px solid var(--main);
     border-radius: 32px;
