@@ -1245,7 +1245,7 @@ main #pet-details .pet-img img {
 
 #footer-container .footer-column h4 {
     font-family: "lato bold";
-    font-size: 1rem;
+    font-size: 1.25rem;
     
     color: var(--main);
     margin-bottom: 2rem;
