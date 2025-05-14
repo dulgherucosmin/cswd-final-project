@@ -465,8 +465,6 @@ main .gallery {
 }
 
 main .available-pets {
-    height: 95vh;
-
     display: flex;
     flex-direction: column;
 
@@ -504,6 +502,51 @@ main #gallery-btn {
     border-radius: 32px;
 
     align-self: center;
+
+    margin-bottom: 2rem;
+}
+
+main .gallery-images .image-box {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.gallery-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images .image-box {
+    margin: 8px;
+}
+
+.gallery-images .image-box img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-images h6 {
+    font-family: 'Lato Bold';
+    font-size: 14px;
+    color: var(--sitewhite);
+
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    text-transform: uppercase;
 }
 
 /* Contact Page */
