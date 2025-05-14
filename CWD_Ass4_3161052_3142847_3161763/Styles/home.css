@@ -283,6 +283,9 @@ main .pet img {
 
     justify-items: center;
     align-items: center;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 main .pet button {
@@ -469,6 +472,9 @@ main .available-pets {
     flex-direction: column;
 
     align-items: center;
+    width: 100%;
+
+    margin-bottom: 4rem;
 }
 
 main #available-heading {
@@ -488,7 +494,7 @@ main .gallery-buttons {
     flex-direction: row;
 }
 
-main #gallery-btn {
+main .filter-btn {
     font-family: 'Lato Bold';
     font-size: .75rem;
 
@@ -512,22 +518,22 @@ main .gallery-images .image-box {
     width: 300px;
     border-radius: 6px;
     overflow: hidden;
+    justify-self: center;
 }
 
 .gallery-images {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery-images .image-box {
-    margin: 8px;
 }
 
 .gallery-images .image-box img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 
     border-radius: 6px;
     transition: transform 0.2s linear;
