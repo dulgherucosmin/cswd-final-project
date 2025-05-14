@@ -104,10 +104,6 @@ header .header-top #donate-btn:hover {
     color: var(--sitewhite);
 }
 
-#website-name a:hover{
-    color: var(--accent);
-}
-
 /* Body */
 
 body {
@@ -461,13 +457,12 @@ main .pet img {
 
     object-fit: cover;
     object-position: center;
+
+    transition: all 0.3s ease-in-out;
 }
 
 main .pet img:hover {
-
     border: 6px solid var(--accent);
-    transition: all 0.3s ease-in-out;
-
     cursor: pointer;
 }
 
