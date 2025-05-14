@@ -660,6 +660,24 @@ main .grid #help-text{
 
 /* About us page */
 
+main .about-hero-image {
+    background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/about-hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+
+    position: relative;
+    min-height: 25vh; 
+    padding: 6rem 0; 
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 main .about{
     display:flex;
     flex-direction: row;
