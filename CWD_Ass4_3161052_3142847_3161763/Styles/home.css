@@ -655,6 +655,16 @@ main .comment-form input {
 
 main .comment-form #content-input {
     height: 5rem;
+    resize:vertical;
+      font-size: .9rem;
+    
+    padding: 0.5rem 0.5rem;
+    margin: 0.125rem 0;
+
+    border-radius: 16px;
+    border: 2px solid var(--main);
+    background-color: var(--sitewhite);
+    
 }
 
 main .comment-form input:focus {
