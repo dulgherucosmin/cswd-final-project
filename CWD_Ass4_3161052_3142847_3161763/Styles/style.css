@@ -258,6 +258,25 @@ header nav ul {
         width: 100%;
     }
 
+    main #service-container {
+        padding: 0 2rem;
+
+    }
+
+    main #service-container .service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #service-container .service .service-title, .service-info {
+        width: 100%;
+    }
+
+    main #service-container .service .service-title {
+        text-align: center;
+    }
+
     /* Footer */
 
     footer #footer-container {
