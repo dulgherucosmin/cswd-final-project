@@ -243,6 +243,7 @@ main .mission #adopt-btn:hover {
     animation: floatDownUp 4s ease-in-out infinite;
 }
 
+
 main .adopt {
     display: flex;
     flex-direction: column;
@@ -1164,6 +1165,75 @@ main #pet-details .pet-img img {
 #neutering-text {
     margin: 1.5rem 0;
 }
+
+/* Meet The Devs */
+.devanimateUpDown {
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.devanimateDownUp {
+    animation: floatDownUp 4s ease-in-out infinite;
+    
+}
+#dev-float {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+}
+
+.dev img {
+    width: 192px;
+    height: 192px;
+
+    border: 6px solid var(--main);
+    border-radius: 50%;
+
+    justify-items: center;
+    align-items: center;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+main .dev{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 8rem;
+}
+
+
+main .dev #dev-container {
+    justify-items: center;
+    padding: 0 4rem;
+
+    
+}
+
+
+main .dev #dev-heading {
+    font-family: 'Lato Bold';
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+}
+
+main .dev #dev-text {
+    font-family: 'Lato';
+    margin: 0 0 2rem 0;
+
+    width: 40%;
+    text-align: center;
+
+    line-height: 1.4;
+}
+
 
 /* Footer */
 
