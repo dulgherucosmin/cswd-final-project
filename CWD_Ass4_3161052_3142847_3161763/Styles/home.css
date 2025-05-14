@@ -586,15 +586,22 @@ main .gallery-images .image-box {
 
 main .contact {
     padding: 4rem 0;
+
     display: flex;
     flex-direction: row;
 
-    justify-content: center;
+    justify-content: space-evenly;
+
     background-color: var(--sitewhite);
 }
 
-main .contact div {
-    margin: 0 8rem;
+main .contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .contact:first-child {
+    margin: 0 4rem;
 }
 
 main #contact-heading {
@@ -623,18 +630,13 @@ main #comment-heading {
 
 main #response {
     font-family: 'Lato Bold';
-
+    margin: 1rem 0;
 }
 
 main .comments {
     display: flex;
     flex-direction: column;
-
-    justify-items: center;
-    align-items: center;
-
     /* background-color: var(--secondarywhite); */
-    background-color: var(--secondarywhite);
     height: 100%;
 }
 /*Contact Us: comment form*/
@@ -652,9 +654,11 @@ main .comments .active {
 main .comment-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
+    align-items: left;
+
+    width: 250px;
+    margin: 0 0;
+    padding: 0;
 }
 
 main .comment-form input {
