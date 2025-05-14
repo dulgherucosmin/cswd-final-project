@@ -19,6 +19,12 @@
     src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Lato-BoldItalic.ttf");
 }
 
+@font-face {
+    font-family: 'Mynerve';
+    src: url("/CWD_Ass4_3161052_3142847_3161763/Fonts/Mynerve-Regular.ttf")
+
+}
+
 
 /* Variables */
 :root {
@@ -60,7 +66,7 @@ header a {
 }
 
 header .header-top {
-    margin: 2rem 10rem;
+    margin: 2.25rem 10rem;
 
     display: flex;
     flex-direction: row;
@@ -86,13 +92,21 @@ header .header-top #donate-btn {
 }
 
 header .header-top #donate-btn:hover {
-    background-color: var(--sitewhite);
-    color: var(--main);
+    background-color: var(--accent);
+    color: var(--sitewhite);
+    border: 2px solid var(--accent);
 
     cursor: pointer;
 }
 
+#website-name {
+    font-family: 'Mynerve';
+    color: var(--sitewhite);
+}
 
+#website-name a:hover{
+    color: var(--accent);
+}
 
 /* Body */
 
@@ -343,7 +357,6 @@ main .adoption-hero-page {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -676,7 +689,6 @@ main .gallery {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -1260,5 +1272,9 @@ main #pet-details .pet-img img {
 #footer-container .footer-column .social-icons a img {
     width: 20px;
     height: auto;
+}
+
+#footer-container #website-name {
+    margin-bottom: 2rem;
 }
 
