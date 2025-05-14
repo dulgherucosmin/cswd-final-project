@@ -362,7 +362,7 @@ main .about{
 }
 
 main .about #about-container{
-     width: 40%;
+    width: 40%;
     padding: 0 4rem;
 }
 
@@ -373,6 +373,7 @@ main .about #about-heading {
     margin: 0 0 1.5rem 0;
     text-align: left;
 }
+
 main .about #about-text {
     font-family: 'Lato';
     font-size: 1rem;
@@ -383,9 +384,11 @@ main .about #about-text {
     text-align:left;
     line-height: 1.4;
 }
+
 main .vision{
     align-items: center;
 }
+
 main .vision #vision-heading{
     font-family: 'Lato Bold';
     font-size: 2rem;
@@ -394,6 +397,7 @@ main .vision #vision-heading{
     margin: 0 0 1.5rem 0;
     text-align: center;
 }
+
 main .vision #vision-text{
     font-family: 'Lato';
     font-size: 1rem;
@@ -413,6 +417,7 @@ main .value{
     flex-direction: column;
     position: relative;
 }
+
 main .value #value-heading{
     font-family: 'Lato Bold';
     font-size: 2rem;
@@ -421,6 +426,7 @@ main .value #value-heading{
     margin: 0 0 1.5rem 0;
     text-align:center;
 }
+
 main .value #value-text{
       font-family: 'Lato';
     font-size: 1rem;
@@ -433,6 +439,7 @@ main .value #value-text{
     
     text-align: center;
 }
+
 main .value ol li{
     font-family: 'Lato';
     font-size: 1rem;
@@ -483,7 +490,7 @@ main #available-heading {
     text-transform: uppercase;
     color: var(--main);
 
-    margin: 4rem 0;
+    margin: 4rem 0 2rem 0;
     padding-bottom: 1rem;
 
     border-bottom: 4px solid var(--accent);
@@ -510,6 +517,14 @@ main .filter-btn {
     align-self: center;
 
     margin-bottom: 2rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main .filter-btn:hover {
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    cursor: pointer;
 }
 
 main .gallery-images .image-box {
