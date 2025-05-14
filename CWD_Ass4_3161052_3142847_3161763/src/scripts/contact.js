@@ -1,10 +1,10 @@
-const commentForm = document.getElementById("comment-form");
+const commentForm = document.querySelector("main .comments .comment-form");
 const nameInput = document.querySelector("main .comments .comment-form #name-input");
 const subjectInput = document.querySelector("main .comments .comment-form #subject-input");
 const emailInput = document.querySelector("main .comments .comment-form #email-input");
 const contentInput = document.querySelector("main .comments .comment-form #content-input");
 
-const errorParagraph = document.querySelector("main .comments #errorMessage");
+const responseParagraph = document.getElementById("response");
 
 function checkValidEmail(email) {
 
@@ -24,17 +24,28 @@ commentForm.addEventListener('submit', (e) => {
     // Prevent form submission before values are entered
     e.preventDefault();
 
-    // TODO: Reset errorParagraph each submission
+    // Reset errorParagraph each submission
+    responseParagraph.classList.remove('active');
 
     // Trim input values to avoid trailing whitespace
     let name = nameInput.value.trim();
-    let subject = subjectInput.value.trim();
-    let email = emailInput.value.trim();
     let content = contentInput.value.trim();
 
-    let errorMessage = "";
+    // Name must be at least 2 characters
+    if (name.length < 2) {
+        responseParagraph.classList.add('active');
+        responseParagraph.innerHTML = "Sorry! The name is too short.";
+        return;
+    };
 
-    // TODO: Validate each input one by one
+    // Name must be less than 32 characters
+    if (name.length > 32) {
+        responseParagraph.classList.add('active');
+        responseParagraph.innerHTML = "Sorry! The name is too long.";
+        return;
+    };
 
+    responseParagraph.classList.add('active');
+    responseParagraph.innerHTML = "Form Submitted! Thank you for your feedback.";
+    
 })
-
