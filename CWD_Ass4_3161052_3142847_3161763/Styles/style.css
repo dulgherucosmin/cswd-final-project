@@ -192,7 +192,7 @@ header nav ul {
 
     /* Header/Nav */
 
-    .header-top {
+    header .header-top {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -256,6 +256,106 @@ header nav ul {
 
     main .adopt #adopt-text {
         width: 100%;
+    }
+
+    /* About Us Page */
+
+    main .about #about-text {
+        width: 100%;
+    }
+
+    /* Adopt Page */
+
+    main .adoption {
+        text-align: center;
+
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    main #cat-container #cat-heading, main #dog-container #dog-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Gallery Page */
+
+    main .gallery-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Involved Page */
+
+    main #involved-container .donation, main #involved-container .fundraising, main #involved-container .volunteer {
+        justify-items: center;
+    }
+
+    main #involved-container .text-involved {
+        text-align: center;
+    }
+
+    /* Contact */
+
+    main .contact-section .contact {
+        flex-direction: column;
+    }
+
+    main .contact-section #contact-heading {
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    main .contact-section #comment-heading {
+        justify-items: center;
+        align-self: center;
+    }
+
+    main .contact-section .contact-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    main .contact-section .comment-form {
+        margin-bottom: 4rem;
+    }
+
+    main .contact-section iframe {
+        width: 550px;
+        height: 600px;
+    }
+
+    /* Devs Page */
+
+    main .dev .dev-card {
+        flex-direction: column;
+        justify-content: none;
+        gap: 2rem;
+    }
+
+    main .dev .dev-card .name, main .dev .dev-card .role, main .dev .dev-card .dev-description {
+        text-align: center;
+    }
+
+    /* Individual Pet Pages */
+
+    main section #pet-details {
+        flex-direction: column;
+    }
+
+    main section #pet-details .pet-text {
+        text-align: center;
+    }
+
+    main section #pet-details #adopt-btn {
+        justify-self: center;
+        align-self: center;
+    }
+
+    main section .pet-img {
+        align-self: center;
     }
 
     /* Footer */
@@ -705,7 +805,7 @@ main .about #about-heading {
     text-align: center;
 }
 
-main .about #about-text {
+main #about-text {
     font-family: 'Lato';
     font-size: 1rem;
     color: var(--siteblack);
@@ -1363,8 +1463,6 @@ main #pet-details .pet-img img {
 
 .dev-card {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 15rem;
     padding: 2rem 0;
 
