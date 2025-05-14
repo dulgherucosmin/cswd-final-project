@@ -92,6 +92,12 @@ header .header-top #donate-btn:hover {
     cursor: pointer;
 }
 
+/* Body */
+body {
+    font-family: 'Lato';
+    color: var(--siteblack);
+}
+
 /* Header: Navigation */
 
 header nav {
@@ -481,7 +487,7 @@ main .gallery {
     justify-content: flex-end;
     align-items: center;
 
-    height: 50vh;
+    height: 100vh;
 
     background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/pexels-photo-1108099.jpeg");
     background-repeat: no-repeat;
