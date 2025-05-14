@@ -266,6 +266,9 @@ main .adopt #adopt-heading {
     font-family: 'Lato Bold';
     font-size: 2.5rem;
     margin: 0 0 1.5rem 0;
+
+    color: var(--main);
+    border-bottom: 4px solid var(--accent);
 }
 
 main .adopt #adopt-text {
@@ -426,17 +429,17 @@ main .pet button {
     color: var(--siteblack);
     background-color: var(--sitewhite);
 
-    border: 2px solid var(--siteblack);
+    border: 2px solid var(--main);
     border-radius: 32px;
 
     transition: all 0.3s ease-in-out;
 }
 
 main .pet button:hover {
-    background-color: var(--main);
+    background-color: var(--accent);
     color: var(--sitewhite);
 
-    border: 2px solid var(--main);
+    border: 2px solid var(--accent);
 
     cursor: pointer
 }
