@@ -465,22 +465,35 @@ main .help #help-heading {
     font-family: 'Lato Bold';
     font-size: 2rem;
     color: var(--siteblack);
-
+    text-align: center;
     margin: 0 0 1.5rem 0;
 }
 
-main .help #help-text {
+main .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 20px 10px;
+    text-align: center;
+}
+main .grid #help-text{
     font-family: 'Lato';
     font-size: 1rem;
     color: var(--siteblack);
-
     margin: 0 0 2rem 0;
 
-    width: 40%;
+    width: 100%;
     text-align: center;
 
     line-height: 1.4;
 }
+.grid article h2{
+    margin-bottom: 0.5rem;
+}
+.grid article{
+    padding: 40px;
+}
+
 
 /* About us page */
 
