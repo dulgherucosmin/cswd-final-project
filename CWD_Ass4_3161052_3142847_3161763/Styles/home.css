@@ -448,6 +448,14 @@ main .pet img {
     object-position: center;
 }
 
+main .pet img:hover {
+
+    border: 6px solid var(--accent);
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+}
+
 main .pet button {
     font-family: 'Lato Bold';
     font-size: .70rem;
