@@ -120,7 +120,7 @@ section.about {
 header nav {
     background-color: var(--sitewhite);
 
-    padding: 1.25rem 0;
+    padding: 1rem 0 1rem 0;
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -142,6 +142,7 @@ header nav ul {
 
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     margin: 0 1rem;
     position: relative;
@@ -164,9 +165,80 @@ header nav ul {
     pointer-events: none;
 }
 
-.hamburger {
+#hamburger {
     display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--sitewhite);
+    margin: 1rem auto;
     cursor: pointer;
+}
+
+/* Animation for nav menu */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query for nav menu */
+@media screen and (max-width: 800px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 2rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Collapsed state */
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-height: 0;
+        overflow: hidden;
+
+        padding: 0;
+        margin: 0;
+
+        align-items: center;
+
+        background-color: var(--sitewhite);
+        border-top: 1px solid #ddd;
+
+        width: 100%;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Expanded state */
+    .nav-menu.active {
+        max-height: 500px; /* Adjust to fit your content */
+    }
+
+    .nav-link {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .nav-link:hover {
+        border: none;
+    }
 }
 
 /* Home Page: Mission */
