@@ -261,7 +261,6 @@ main .adopt {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    padding-bottom: 2rem;
     margin: 0 8rem;
 }
 
@@ -361,7 +360,7 @@ main .adoption-hero-page {
 }
 
 .adoption {
-    margin: 4rem 10rem 4rem 10rem;
+    margin: 2rem 10rem;
 }
 
 #adoption-heading {
@@ -373,8 +372,7 @@ main .adoption-hero-page {
 }
 
 #cat-heading, #dog-heading {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
 }
 
 #cat-container, #dog-container {
@@ -461,6 +459,14 @@ main .pet img {
     object-position: center;
 }
 
+main .pet img:hover {
+
+    border: 6px solid var(--accent);
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+}
+
 main .pet button {
     font-family: 'Lato Bold';
     font-size: .70rem;
@@ -488,10 +494,6 @@ main .pet button:hover {
     cursor: pointer
 }
 
-main .mission, main .help {
-    background-color: var(--secondarywhite);
-}
-
 main .adopt {
     background-color: var(--sitewhite);
 }
@@ -499,7 +501,7 @@ main .adopt {
 /* Home Page: Help */
 
 main .help {
-    padding: 4rem 8rem;
+    padding: 0 8rem;
     align-items: center;
 }
 
@@ -511,7 +513,10 @@ main .help #help-container {
 main .help #help-heading {
     font-family: 'Lato Bold';
     font-size: 2rem;
-    color: var(--siteblack);
+
+    color: var(--main);
+    border-bottom: 3px solid var(--accent);
+
     text-align: center;
     margin: 0 0 1.5rem 0;
 }
@@ -536,6 +541,8 @@ main .grid #help-text{
 }
 .grid article h2{
     margin-bottom: 0.5rem;
+
+    color: var(--main);
 }
 .grid article{
     padding: 40px;
