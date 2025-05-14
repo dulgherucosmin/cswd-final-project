@@ -60,7 +60,7 @@ header a {
 }
 
 header .header-top {
-    margin: 2rem 4rem;
+    margin: 2rem 10rem;
 
     display: flex;
     flex-direction: row;
@@ -97,12 +97,12 @@ header .header-top #donate-btn:hover {
 body {
     font-family: 'Lato';
     color: var(--siteblack);
-
 }
 
 section.about {
     margin-top: 4rem;
 }
+
 /* Header: Navigation */
 
 header nav {
@@ -226,6 +226,7 @@ main .adopt {
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin: 0 8rem;
 }
 
 main .adopt #adopt-container {
@@ -283,6 +284,8 @@ main #adopt-pets {
     justify-content: space-evenly;
     align-content: space-evenly;
 }
+
+/* Main: Adoption Process */
 
 .adoption {
     margin: 4rem 4rem;
@@ -424,7 +427,13 @@ main .adopt, main.thisyear {
 /* Home Page: Help */
 
 main .help {
+    padding: 4rem 8rem;
     align-items: center;
+}
+
+main .help #help-container {
+
+    justify-items: center;
 }
 
 main .help #help-heading {
