@@ -94,6 +94,10 @@ header nav {
     background-color: var(--sitewhite);
 
     padding: 1.25rem 0;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
 }
 
 header nav ul {
@@ -679,6 +683,22 @@ main .comment-form button {
 
 main .comment-form button:hover {
     background-color: var(--accent);
+}
+
+/* Home Page: Pet Details */
+
+main #pet-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 4rem;
+    gap: 2rem;
+}
+
+main #pet-details .pet-text h1 {
+    font-family: 'Lato Bold';
+    font-size: 4rem;
+    color: var(--siteblack);
 }
 
 
