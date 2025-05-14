@@ -25,6 +25,30 @@
 
 }
 
+/* Animations */
+
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floatDownUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Variables */
 :root {
@@ -175,203 +199,6 @@ header nav ul {
     cursor: pointer;
 }
 
-/* Animation for nav menu */
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media query for responsive design */
-@media screen and (max-width: 980px) {
-
-    /* Header/Nav */
-
-    header .header-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin: 1.5rem 2rem;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    nav {
-        width: 100%;
-
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Collapsed state */
-    .nav-menu {
-        flex-direction: column;
-        gap: 0.5rem;
-        max-height: 0;
-        overflow: hidden;
-
-        padding: 0;
-        margin: 0;
-
-        align-items: center;
-
-        background-color: var(--sitewhite);
-        border-top: 1px solid #ddd;
-
-        width: 100%;
-        transition: max-height 0.4s ease-in-out;
-    }
-
-    /* Expanded state */
-    .nav-menu.active {
-        max-height: 500px; /* Adjust to fit your content */
-    }
-
-    .nav-link {
-        text-align: center;
-        justify-self: center;
-    }
-
-    .nav-link:hover {
-        border: none;
-    }
-
-    /* Index */
-
-    main .adopt #adopt-pets {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    main .adopt #adopt-text {
-        width: 100%;
-    }
-
-    /* About Us Page */
-
-    main .about #about-text {
-        width: 100%;
-    }
-
-    /* Adopt Page */
-
-    main .adoption {
-        text-align: center;
-
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    main #cat-container #cat-heading, main #dog-container #dog-heading {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Gallery Page */
-
-    main .gallery-images {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* Involved Page */
-
-    main #involved-container .donation, main #involved-container .fundraising, main #involved-container .volunteer {
-        justify-items: center;
-    }
-
-    main #involved-container .text-involved {
-        text-align: center;
-    }
-
-    /* Contact */
-
-    main .contact-section .contact {
-        flex-direction: column;
-    }
-
-    main .contact-section #contact-heading {
-        width: 70%;
-        justify-self: center;
-        align-self: center;
-    }
-
-    main .contact-section #comment-heading {
-        justify-items: center;
-        align-self: center;
-    }
-
-    main .contact-section .contact-content {
-        align-items: center;
-        text-align: center;
-    }
-
-    main .contact-section .comment-form {
-        margin-bottom: 4rem;
-    }
-
-    main .contact-section iframe {
-        width: 550px;
-        height: 600px;
-    }
-
-    /* Devs Page */
-
-    main .dev .dev-card {
-        flex-direction: column;
-        justify-content: none;
-        gap: 2rem;
-    }
-
-    main .dev .dev-card .name, main .dev .dev-card .role, main .dev .dev-card .dev-description {
-        text-align: center;
-    }
-
-    /* Individual Pet Pages */
-
-    main section #pet-details {
-        flex-direction: column;
-    }
-
-    main section #pet-details .pet-text {
-        text-align: center;
-    }
-
-    main section #pet-details #adopt-btn {
-        justify-self: center;
-        align-self: center;
-    }
-
-    main section .pet-img {
-        align-self: center;
-    }
-
-    /* Footer */
-
-    footer #footer-container {
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-    footer div {
-        text-align: center;
-        align-items: center;
-    }
-}
-
 /* Home Page: Mission */
 
 main .mission {
@@ -440,18 +267,6 @@ main .mission #adopt-btn:hover {
 }
 
 /* Home Page: Adopt */
-
-@keyframes floatUpDown {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
-
-@keyframes floatDownUp {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(20px); }
-    100% { transform: translateY(0); }
-}
 
 .animateUpDown {
     animation: floatUpDown 4s ease-in-out infinite;
@@ -1611,3 +1426,187 @@ main .dev #dev-text {
     margin-bottom: 2rem;
 }
 
+/* Media query for responsive design */
+@media screen and (max-width: 980px) {
+
+    /* Header/Nav */
+
+    header .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 2rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Collapsed state */
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-height: 0;
+        overflow: hidden;
+
+        padding: 0;
+        margin: 0;
+
+        align-items: center;
+
+        background-color: var(--sitewhite);
+        border-top: 1px solid #ddd;
+
+        width: 100%;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Expanded state */
+    .nav-menu.active {
+        max-height: 500px; /* Adjust to fit your content */
+    }
+
+    .nav-link {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .nav-link:hover {
+        border: none;
+    }
+
+    /* Index */
+
+    main .adopt #adopt-pets {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .adopt #adopt-text {
+        width: 100%;
+    }
+
+    /* About Us Page */
+
+    main .about #about-text {
+        width: 100%;
+    }
+
+    /* Adopt Page */
+
+    main .adoption {
+        text-align: center;
+
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    main #cat-container #cat-heading, main #dog-container #dog-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Gallery Page */
+
+    main .gallery-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Involved Page */
+
+    main #involved-container .donation, main #involved-container .fundraising, main #involved-container .volunteer {
+        justify-items: center;
+    }
+
+    main #involved-container .text-involved {
+        text-align: center;
+    }
+
+    /* Contact */
+
+    main .contact-section .contact {
+        flex-direction: column;
+    }
+
+    main .contact-section #contact-heading {
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    main .contact-section #comment-heading {
+        justify-items: center;
+        align-self: center;
+    }
+
+    main .contact-section .contact-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    main .contact-section .comment-form {
+        margin-bottom: 4rem;
+    }
+
+    main .contact-section iframe {
+        width: 550px;
+        height: 600px;
+    }
+
+    /* Devs Page */
+
+    main .dev .dev-card {
+        flex-direction: column;
+        justify-content: none;
+        gap: 2rem;
+    }
+
+    main .dev .dev-card .name, main .dev .dev-card .role, main .dev .dev-card .dev-description {
+        text-align: center;
+    }
+
+    /* Individual Pet Pages */
+
+    main section #pet-details {
+        flex-direction: column;
+    }
+
+    main section #pet-details .pet-text {
+        text-align: center;
+    }
+
+    main section #pet-details #adopt-btn {
+        justify-self: center;
+        align-self: center;
+    }
+
+    main section .pet-img {
+        align-self: center;
+    }
+
+    /* Footer */
+
+    footer #footer-container {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    footer div {
+        text-align: center;
+        align-items: center;
+    }
+}
