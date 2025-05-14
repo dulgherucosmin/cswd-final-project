@@ -55,6 +55,7 @@ header {
 
 header a {
     text-decoration: none;
+    color: var(--sitewhite);
 }
 
 header .header-top {
@@ -65,6 +66,7 @@ header .header-top {
 
     justify-content: space-between;
 }
+
 
 header .header-top #donate-btn {
     font-family: 'Lato Bold';
@@ -117,6 +119,7 @@ header nav ul {
 
     text-transform: uppercase;
     text-decoration: none;
+
     margin: 0 1rem;
     position: relative;
 }
