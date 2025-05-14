@@ -1690,6 +1690,10 @@ main .dev #dev-text {
         gap: 2rem;
     }
 
+    main .dev .dev-image {
+        align-self: center;
+    }
+
     main .dev .dev-card .name, main .dev .dev-card .role, main .dev .dev-card .dev-description {
         text-align: center;
     }
