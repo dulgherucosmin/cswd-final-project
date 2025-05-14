@@ -539,6 +539,7 @@ main .contact #contact-phone {
 
 main #comment-heading {
     font-family: 'Lato Bold';
+    font-size: 2rem;
     margin: 2rem 0 .5rem 0;
 }
 
@@ -551,6 +552,17 @@ main .comments {
 
     background-color: var(--secondarywhite);
     height: 100%;
+}
+
+main p {
+    visibility: hidden;
+}
+
+main .comments .active {
+    font-family: 'Lato';
+
+    color: var(--accent);
+    visibility: visible;
 }
 
 main .comment-form {
