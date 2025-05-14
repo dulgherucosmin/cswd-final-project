@@ -254,9 +254,8 @@ main .adopt #view-btn {
 }
 
 main .adopt #view-btn:hover {
-    background-color: var(--siteblack);
-    color: var(--main);
-
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
     cursor: pointer
 }
 
