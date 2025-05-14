@@ -40,6 +40,7 @@
     margin: 0;
 }
 
+
 /* Header: Top Part */
 
 header {
@@ -47,6 +48,7 @@ header {
 
     background-color: var(--main);
     color: var(--sitewhite);
+
     display: flex;
     flex-direction: column;
 }
@@ -698,17 +700,86 @@ main .comment-form button:hover {
 /* Home Page: Pet Details */
 
 main #pet-details {
+    font-family: "Lato";
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2rem 4rem;
+    justify-content: space-between;
+    margin: 4rem;
     gap: 2rem;
 }
 
-main #pet-details .pet-text h1 {
+main #pet-details .pet-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+main #pet-details .pet-text h2 {
     font-family: 'Lato Bold';
     font-size: 4rem;
-    color: var(--siteblack);
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+main #pet-details .pet-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+main #pet-details .pet-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondarywhite);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main #pet-details .pet-info h3 {
+    font-family: 'Lato Bold';
+    color: var(--main);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+main #pet-details .pet-info ul {
+    list-style: none;
+}
+
+main #pet-details .pet-info ul li {
+    margin-bottom: 0.75rem;
+    display: flex;
+}
+
+main #pet-details .pet-info ul li strong {
+    min-width: 100px;
+    color: var(--accent);
+}
+
+main #pet-details .pet-text #adopt-btn {
+    margin-top: 2rem;
+    font-family: 'Lato Bold';
+    font-size: .85rem;
+    padding: .85rem 2rem;
+    text-transform: uppercase;
+    color: var(--sitewhite);
+    background-color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 32px;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+
+main #pet-details .pet-text #adopt-btn:hover {
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    cursor: pointer;
+}
+
+main #pet-details .pet-img img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
 }
 
 
