@@ -592,9 +592,9 @@ main .available-pets {
 
     align-items: center;
 
-    margin-bottom: 4rem;
-
     margin: 2rem 10rem;
+
+    margin-bottom: 4rem;
 }
 
 main #available-heading {
