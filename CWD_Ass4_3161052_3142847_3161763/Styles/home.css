@@ -554,7 +554,7 @@ main .comments {
     height: 100%;
 }
 
-main p {
+main .comments p {
     visibility: hidden;
 }
 
