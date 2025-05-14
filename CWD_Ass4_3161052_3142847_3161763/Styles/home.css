@@ -360,6 +360,10 @@ main .adoption-hero-page {
 
 #cat-heading, #dog-heading {
     margin: 1.5rem 0;
+
+    color: var(--accent);
+
+    width: 35%;
 }
 
 #cat-container, #dog-container {
