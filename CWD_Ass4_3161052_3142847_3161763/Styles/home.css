@@ -221,12 +221,36 @@ main .mission #adopt-btn:hover {
 
 /* Home Page: Adopt */
 
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floatDownUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+.animateUpDown {
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.animateDownUp {
+    animation: floatDownUp 4s ease-in-out infinite;
+}
+
 main .adopt {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 0 8rem;
+}
+
+main .adopt .pet {
+    position: relative;
 }
 
 main .adopt #adopt-container {
