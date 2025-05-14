@@ -754,8 +754,13 @@ main .contact:first-child {
 
 main #contact-heading {
     font-family: 'Lato Bold';
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     margin-top: 0;
+
+    color: var(--main);
+    border-bottom: 3px solid var(--accent);
+    
+    width: 60%;
 }
 
 main .contact p {
@@ -772,8 +777,13 @@ main .contact #contact-phone {
 
 main #comment-heading {
     font-family: 'Lato Bold';
-    font-size: 2rem;
-    margin: 2rem 0 .5rem 0;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 .5rem 0;
+
+    color: var(--main);
+    border-bottom: 3px solid var(--accent);
+
+    width: 80%;
 }
 
 main #response {
