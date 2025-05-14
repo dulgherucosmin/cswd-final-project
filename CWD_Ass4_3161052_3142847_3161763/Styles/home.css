@@ -347,7 +347,7 @@ main .adoption-hero-page {
 }
 
 .adoption {
-    margin: 4rem 10rem 4rem 10rem;
+    margin: 2rem 10rem;
 }
 
 #adoption-heading {
@@ -359,8 +359,7 @@ main .adoption-hero-page {
 }
 
 #cat-heading, #dog-heading {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
 }
 
 #cat-container, #dog-container {
