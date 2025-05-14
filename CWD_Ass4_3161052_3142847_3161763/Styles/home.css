@@ -457,7 +457,7 @@ main .pet button {
     margin: 1rem 2rem;
     padding: .75rem 1.5rem;
     text-transform: uppercase;
-    color: var(--siteblack);
+    color: var(--main);
     background-color: var(--sitewhite);
 
     border: 2px solid var(--main);
