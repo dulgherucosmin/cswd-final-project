@@ -374,7 +374,7 @@ main .adoption-hero-page {
 #cat-heading, #dog-heading {
     margin: 1.5rem 0;
 
-    color: var(--accent);
+    color: var(--main);
 
     width: 35%;
 }
@@ -413,7 +413,7 @@ main .adoption-hero-page {
     font-family: 'Lato Bold';
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--main);
+    color: var(--accent);
 }
 
 ul.requirements {
