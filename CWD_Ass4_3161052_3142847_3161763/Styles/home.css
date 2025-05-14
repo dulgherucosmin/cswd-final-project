@@ -681,6 +681,9 @@ main .comment-form button:hover {
     margin-bottom: 0.75rem;
     line-height: 1.6;
 }
+#footer-container .footer-column h2{
+    color:#71993B;
+}
 
 #footer-container .footer-column h4 {
     font-family: "lato bold";
