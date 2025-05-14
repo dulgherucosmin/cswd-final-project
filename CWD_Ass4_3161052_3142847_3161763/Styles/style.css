@@ -199,6 +199,122 @@ header nav ul {
     cursor: pointer;
 }
 
+/* Animation for nav menu */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 980px) {
+
+    /* Header/Nav */
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 2rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Collapsed state */
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-height: 0;
+        overflow: hidden;
+
+        padding: 0;
+        margin: 0;
+
+        align-items: center;
+
+        background-color: var(--sitewhite);
+        border-top: 1px solid #ddd;
+
+        width: 100%;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Expanded state */
+    .nav-menu.active {
+        max-height: 500px; /* Adjust to fit your content */
+    }
+
+    .nav-link {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .nav-link:hover {
+        border: none;
+    }
+
+    /* Index */
+
+    main .adopt #adopt-pets {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .adopt #adopt-text {
+        width: 100%;
+    }
+
+    main #service-container {
+        padding: 0 2rem;
+
+    }
+
+    main #service-container .service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #service-container .service .service-title, .service-info {
+        width: 100%;
+    }
+
+    main #service-container .service .service-title {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer #footer-container {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    footer div {
+        text-align: center;
+        align-items: center;
+    }
+}
+
 /* Home Page: Mission */
 
 main .mission {
