@@ -274,7 +274,7 @@ main #adopt-pets {
     justify-content: space-evenly;
     align-content: space-evenly;
 }
-
+/* Home page: pets*/
 main .pet {
     display: flex;
     flex-direction: column;
@@ -391,6 +391,7 @@ main .about #about-text {
     line-height: 1.4;
 }
 
+/* About Us: vision*/
 main .vision{
     align-items: center;
 }
@@ -416,7 +417,7 @@ main .vision #vision-text{
 
     line-height: 1.4;
 }
-
+/* About Us: values*/
 main .value{
     
     display:flex;
@@ -622,7 +623,7 @@ main .comments {
     background-color: var(--secondarywhite);
     height: 100%;
 }
-
+/*Contact Us: comment form*/
 main .comments p {
     visibility: hidden;
 }
