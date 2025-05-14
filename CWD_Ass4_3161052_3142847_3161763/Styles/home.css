@@ -446,7 +446,7 @@ main .mission, main .help {
     background-color: var(--secondarywhite);
 }
 
-main .adopt, main.thisyear {
+main .adopt {
     background-color: var(--sitewhite);
 }
 
