@@ -168,6 +168,11 @@ header nav ul {
     pointer-events: none;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 /* Home Page: Mission */
 
 main .mission {
