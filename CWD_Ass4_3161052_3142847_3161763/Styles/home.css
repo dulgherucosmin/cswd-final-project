@@ -96,6 +96,7 @@ header .header-top #donate-btn:hover {
 body {
     font-family: 'Lato';
     color: var(--siteblack);
+
 }
 
 /* Header: Navigation */
@@ -284,6 +285,86 @@ main #adopt-pets {
     justify-content: space-evenly;
     align-content: space-evenly;
 }
+
+.adoption {
+    margin: 2rem 4rem;
+}
+
+#adoption-heading {
+    font-family: 'Lato Bold';
+    font-size: 2rem;
+    color: var(--main);
+
+    margin: 0 0 1.5rem 0;
+}
+
+#cat-heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#cat-container {
+    margin: 0rem 4rem;
+}
+
+.step {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    background-color: var(--main);
+    color: var(--sitewhite);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    font-family: "Lato Bold";
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-title {
+    font-family: 'Lato Bold';
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--main);
+}
+
+ul.requirements {
+    list-style: none;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+ul.requirements li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul.requirements li::before {
+    content: '✓';
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+.adoption-fee {
+    background-color: var(--secondarywhite);
+    border-left: 4px solid var(--accent);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
 
 /* Home page: pets*/
 
