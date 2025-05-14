@@ -93,12 +93,16 @@ header .header-top #donate-btn:hover {
 }
 
 /* Body */
+
 body {
     font-family: 'Lato';
     color: var(--siteblack);
 
 }
 
+section.about {
+    margin-top: 4rem;
+}
 /* Header: Navigation */
 
 header nav {
@@ -281,7 +285,8 @@ main #adopt-pets {
 }
 
 .adoption {
-    margin: 2rem 4rem;
+    margin: 4rem 4rem;
+    margin-bottom: 2rem;
 }
 
 #adoption-heading {
@@ -897,7 +902,7 @@ main #pet-details .pet-img img {
     font-family: "Lato";
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #footer-container .footer-column p {
