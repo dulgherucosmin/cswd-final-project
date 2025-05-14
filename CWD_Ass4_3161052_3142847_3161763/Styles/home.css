@@ -357,6 +357,7 @@ main .help #help-text {
 }
 
 /* About us page */
+
 main .about{
     display:flex;
     flex-direction: row;
@@ -427,6 +428,7 @@ main .value{
 main .value #value-heading{
     font-family: 'Lato Bold';
     font-size: 2rem;
+
     color: var(--siteblack);
 
     margin: 0 0 1.5rem 0;
@@ -440,7 +442,6 @@ main .value #value-text{
     
     margin: 0 0 2rem 0;
 
-    
     line-height: 1.4;
     
     text-align: center;
@@ -537,7 +538,6 @@ main .gallery-images .image-box {
     position: relative;
     height: 300px;
     width: 300px;
-    border-radius: 6px;
     overflow: hidden;
     justify-self: center;
 }
@@ -555,8 +555,6 @@ main .gallery-images .image-box {
     height: 100%;
     object-fit: cover;
     object-position: center;
-
-    border-radius: 6px;
     transition: transform 0.2s linear;
 }
 
