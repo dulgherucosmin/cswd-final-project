@@ -288,7 +288,7 @@ main #adopt-pets {
 /* Main: Adoption Process */
 
 .adoption {
-    margin: 4rem 4rem;
+    margin: 4rem 10rem;
     margin-bottom: 2rem;
 }
 
@@ -306,7 +306,7 @@ main #adopt-pets {
 }
 
 #cat-container {
-    margin: 0rem 4rem;
+    margin: 0rem 10rem;
 }
 
 .step {
@@ -591,9 +591,10 @@ main .available-pets {
     flex-direction: column;
 
     align-items: center;
-    width: 100%;
 
     margin-bottom: 4rem;
+
+    margin: 2rem 10rem;
 }
 
 main #available-heading {
@@ -602,7 +603,7 @@ main #available-heading {
     text-transform: uppercase;
     color: var(--main);
 
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     padding-bottom: 1rem;
 
     border-bottom: 4px solid var(--accent);
@@ -904,14 +905,14 @@ main #pet-details .pet-img img {
     background-color: var(--siteblack);
     color: var(--sitewhite);
 
-    padding: 4rem 4rem;
+    padding: 4rem 10rem;
 }
 
 #footer-container {
     font-family: "Lato";
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #footer-container .footer-column p {
