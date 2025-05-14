@@ -164,6 +164,11 @@ header nav ul {
     pointer-events: none;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 /* Home Page: Mission */
 
 main .mission {
@@ -1215,14 +1220,35 @@ main #pet-details .pet-img img {
 }
 
 /* Meet The Devs */
-.devanimateUpDown {
-    animation: floatUpDown 4s ease-in-out infinite;
+
+.dev-hero-image {
+    background-image: url("/CWD_Ass4_3161052_3142847_3161763/Images/get-involved-thing.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+
+    position: relative;
+    min-height: 25vh; 
+    padding: 6rem 0; 
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.devanimateDownUp {
-    animation: floatDownUp 4s ease-in-out infinite;
-    
+.dev-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    padding: 2rem 0;
+
+    border-bottom: 1px solid var(--secondarywhite);
 }
+
 #dev-float {
     display: flex;
     justify-content: space-between;
@@ -1232,8 +1258,8 @@ main #pet-details .pet-img img {
 }
 
 .dev img {
-    width: 192px;
-    height: 192px;
+    width: 250px;
+    height: 250px;
 
     border: 6px solid var(--main);
     border-radius: 50%;
@@ -1254,15 +1280,13 @@ main .dev{
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin: 0 8rem;
+    margin: 0 10rem;
 }
 
 
 main .dev #dev-container {
     justify-items: center;
-    padding: 0 4rem;
-
-    
+    margin-bottom: 2rem;    
 }
 
 
@@ -1282,6 +1306,19 @@ main .dev #dev-text {
     line-height: 1.4;
 }
 
+.dev-info .name {
+    font-family: 'Lato Bold';
+    font-size: 1.5rem;
+    color: var(--main);
+    margin-bottom: 0.25rem;
+}
+
+.dev-info .role {
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
 
 /* Footer */
 
